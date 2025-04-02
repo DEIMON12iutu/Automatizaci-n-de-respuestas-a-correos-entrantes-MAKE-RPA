@@ -34,8 +34,10 @@ Este proyecto implementa un sistema RPA para gestión de correos empresariales m
    - Almacena en **Google Sheets**:  
      ```plaintext
      • Remitente • Asunto • Categoría ("urgente"/"facturacion")  
-     • Fecha/hora • Estado de respuesta  
-     ```![Vídeo-sin-título-‐-Hecho-con-Clipchamp](https://github.com/user-attachments/assets/1353a57a-f6fe-4806-a714-71eefd237d8e)
+     • Fecha/hora • Estado de respuesta 
+
+     ![Vídeo-sin-título-‐-Hecho-con-Clipchamp](https://github.com/user-attachments/assets/3d62b659-2e76-46f0-818d-762a836461b7)
+
 
 
 ##  Beneficios Clave
