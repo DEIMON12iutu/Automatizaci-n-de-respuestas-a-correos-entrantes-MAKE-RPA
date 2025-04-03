@@ -93,7 +93,7 @@ Este proyecto implementa un sistema RPA para gestión de correos empresariales m
 
 # Configuración del Flujo en Make.com
 
-## 📥 Importar el Flujo
+##  Importar el Flujo
 1. **Exporta tu flujo actual**:
    - En Make.com, ve a tu escenario > Haz clic en el menú de tres puntos (⋮) > Selecciona **"Export"**.
    - Guarda el archivo `GmailAutomation.json` en tu computadora.
@@ -132,7 +132,7 @@ Este proyecto implementa un sistema RPA en **Make.com** que gestiona automática
    Fecha | Remitente | Asunto | Categoría | Estado
 ![image](https://github.com/user-attachments/assets/c117d12f-be94-4dae-aeb4-3d028e5f8077)
 
-## 📂 Estructura del Proyecto
+##  Estructura del Proyecto
 blueprint.json: Definición del flujo de trabajo en formato JSON. README.md: Este archivo.
 
 
@@ -151,9 +151,9 @@ blueprint.json: Definición del flujo de trabajo en formato JSON. README.md: Est
       - Registro en Google Sheets
       - Etiquetado en Gmail (si es urgente)
 
-## 👥 Autores
+##  Autores
 
-**David Sosa**   
+**David Sosa**   @DEIMON12iutu
 **Alejandro Ramírez**  
 ---
 
