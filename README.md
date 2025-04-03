@@ -153,10 +153,11 @@ blueprint.json: Definición del flujo de trabajo en formato JSON. README.md: Est
 
 ##  Autores
 
-**David Sosa**   @DEIMON12iutu
+**David Sosa**
+
 **Alejandro Ramírez**  
 ---
 
-## COntribuciones 
+## Contribuciones 
 
 ### ¡Las contribuciones son bienvenidas! Por favor, abre un issue o un pull request en este repositorio.
