@@ -2,7 +2,8 @@
 Este proyecto presenta una solución de automatización de procesos robóticos (RPA) utilizando como plataforma MAKE.com.
 
 # Automatización de Respuestas a Correos con Make.com (RPA)
-![Make.com Logo](https://www.make.com/images/logo.svg)
+![Make.com Logo]![image](https://github.com/user-attachments/assets/8223e1ed-963d-4d1a-94dc-ad8b79c15909)
+
 
 Este proyecto implementa un flujo de automatización (RPA) en **Make.com** para:
 - **Clasificar** correos entrantes mediante **filtros nativos** (palabra clave "urgente","facturacion,"ayuda")
