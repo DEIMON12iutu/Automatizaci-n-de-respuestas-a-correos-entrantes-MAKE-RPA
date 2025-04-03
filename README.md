@@ -59,7 +59,7 @@ Este proyecto implementa un sistema RPA para gestión de correos empresariales m
 - Acciones: Etiquetar en Gmail + Registrar en Sheets.
 
 
-## ⚙️ Requisitos Técnicos
+##  Requisitos Técnicos
 
 ### 1. **Cuentas Obligatorias**
 - **Make.com**  
@@ -106,7 +106,7 @@ Este proyecto implementa un sistema RPA para gestión de correos empresariales m
 
 # Flujo de Automatización de Correos con Make.com
 
-## 📨 Proceso de Automatización
+##  Proceso de Automatización
 
 Este proyecto implementa un sistema RPA en **Make.com** que gestiona automáticamente los correos entrantes de una cuenta empresarial de Gmail. El flujo funciona de la siguiente manera:
 
