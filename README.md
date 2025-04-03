@@ -152,7 +152,7 @@ blueprint.json: Definición del flujo de trabajo en formato JSON. README.md: Est
       - Etiquetado en Gmail (si es urgente)
 
 ##  Autores
-**David Sosa** 
+**David Sosa**  Y
 **Alejandro Ramírez**  
 ---
 
