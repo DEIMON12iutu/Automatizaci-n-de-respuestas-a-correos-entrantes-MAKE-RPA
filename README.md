@@ -74,9 +74,9 @@ Este proyecto implementa un sistema RPA para gestión de correos empresariales m
 #### En Google Cloud:  
 1. Activar APIs:  
    - Gmail API  
-   - Google Sheets API  
-2. Crear credenciales OAuth 2.0 (tipo "Aplicación de escritorio").  
-3. Descargar archivo JSON de credenciales.
+   - Google Sheets API
+   
+2. Descargar archivo JSON de credenciales.
 
 #### En Make.com:  
 1. Añadir conexiones:  
@@ -90,3 +90,72 @@ Este proyecto implementa un sistema RPA para gestión de correos empresariales m
     Fecha | Remitente | Asunto | Categoría | Respondido  
     ```
 
+# Configuración del Flujo en Make.com
+
+## 📥 Importar el Flujo
+1. **Exporta tu flujo actual**:
+   - En Make.com, ve a tu escenario > Haz clic en el menú de tres puntos (⋮) > Selecciona **"Export"**.
+   - Guarda el archivo `GmailAutomation.json` en tu computadora.
+
+2. **Importar en otro entorno**:
+   ```plaintext
+   • Crea un nuevo escenario en Make.com
+   • Haz clic en "Import" > Sube el archivo JSON
+   • Revisa que todos los módulos estén conectados
+
+# Flujo de Automatización de Correos con Make.com
+
+## 📨 Proceso de Automatización
+
+Este proyecto implementa un sistema RPA en **Make.com** que gestiona automáticamente los correos entrantes de una cuenta empresarial de Gmail. El flujo funciona de la siguiente manera:
+
+1. **Detección de Correos**:  
+   El módulo `Gmail > Watch Emails` monitorea la bandeja de entrada cada 15 minutos, detectando nuevos mensajes mediante conexión IMAP o API.
+
+2. **Clasificación Automática**:  
+   Un nodo `Router` filtra los correos usando condiciones no sensibles a mayúsculas:
+   - Si el asunto **o** cuerpo contiene "urgente", el mensaje sigue la ruta de prioridad alta
+   - Los correos normales siguen la ruta estándar
+
+3. **Procesamiento Diferenciado**:
+   - **Para urgentes**:
+     - Aplica etiqueta "URGENTE" en Gmail
+     - Registra en Google Sheets con estado "Pendiente"
+   - **Para correos con otras etiquetas**:
+     - Envía respuesta automática vía SMTP (Dependidendo su etiqueta dada).
+     - Registra en Sheets como "Respondido"
+
+4. **Registro Centralizado**:  
+   Todos los correos se almacenan en Google Sheets con:
+   ```plaintext
+   Fecha | Remitente | Asunto | Categoría | Estado
+![image](https://github.com/user-attachments/assets/c117d12f-be94-4dae-aeb4-3d028e5f8077)
+
+## 📂 Estructura del Proyecto
+blueprint.json: Definición del flujo de trabajo en formato JSON. README.md: Este archivo.
+
+
+## Uso del JSON
+
+1. **Importar el flujo**:
+   - Descarga `Make_Flow.json`
+   - En Make.com: *Create Scenario* → *Import* → Sube el archivo
+   - Reconfigura las conexiones (Gmail, Google Sheets, SMTP)
+
+2. **Pruebas**:
+   ```plaintext
+   1. Envía un correo de prueba a la cuenta monitoreada
+   2. Verifica:
+      - Respuesta automática recibida
+      - Registro en Google Sheets
+      - Etiquetado en Gmail (si es urgente)
+
+## 👥 Autores
+
+**David Sosa**   
+**Alejandro Ramírez**  
+---
+
+## COntribuciones 
+
+### ¡Las contribuciones son bienvenidas! Por favor, abre un issue o un pull request en este repositorio.
